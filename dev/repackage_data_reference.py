@@ -24,7 +24,12 @@ import pyarrow as pa
 dataset_kwargs = {
     "path": "HuggingFaceFW/fineweb-edu",
     "split": "train",
-    "name": "sample-100BT", # ~100B GPT-2 tokens at ~3 chars/token => ~300B chars total
+    "name": "sample-100BT", # ~100B GPT-2 tokens at ~3 chars/token => ~300B chars total 
+    # S: this is from the hf dataset page
+    # sample-100BT: a subset randomly sampled from the whole dataset of around 100B gpt2 tokens
+    # 
+
+        
 }
 ds = load_dataset(**dataset_kwargs)
 
